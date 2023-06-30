@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#lists content of current directory by part of the name after the first dash.
+v=$(ls)
+for i in $v; 
+do 
+	echo "$i" | cut -d '-' -f2
+done
