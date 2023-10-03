@@ -1,0 +1,3 @@
+#!/usr/bin/env/bash
+#Run Apache on a docker container to return a required page
+service apache2 start
