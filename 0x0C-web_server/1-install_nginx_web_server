@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+#Installs nginx web server
+#	Listens on port 80
+#	return a page that contains the string Hello World! when queried at it's
+#	root with a GET requst using curl.
+
+sudo apt-get update
+sudo apt-get -y install nginx
+echo 'Hello World!' > /var/www/html/index.html
+service nginx restart
